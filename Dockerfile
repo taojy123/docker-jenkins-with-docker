@@ -15,7 +15,7 @@ USER jenkins
 
 RUN curl -sSL https://get.daocloud.io/docker | sh
 
-COPY jenkins.sh /usr/local/bin/jenkins.sh
+RUN sed -i '1 a\\nnohup dockerd &\n' /usr/local/bin/jenkins.sh
 
 
 # ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
