@@ -26,12 +26,12 @@ RUN apt-get install -y apt-transport-https ca-certificates curl gnupg2 lsb-relea
 
 
 # 官方源
-# RUN curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+# RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 # RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 
 
 # 国内源
-RUN curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/debian/gpg | sudo apt-key add -
+RUN curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/debian/gpg | apt-key add -
 RUN add-apt-repository "deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/debian $(lsb_release -cs) stable"
 
 
