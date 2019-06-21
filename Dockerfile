@@ -5,14 +5,14 @@ LABEL BaseOS="Debian 9 Stretch"
 USER root
 
 
-RUN echo "deb https://mirrors.163.com/debian/ stretch main non-free contrib" > /etc/apt/sources.list
-RUN echo "deb https://mirrors.163.com/debian/ stretch-updates main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb https://mirrors.163.com/debian/ stretch-backports main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb-src https://mirrors.163.com/debian/ stretch main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb-src https://mirrors.163.com/debian/ stretch-updates main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb-src https://mirrors.163.com/debian/ stretch-backports main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb https://mirrors.163.com/debian-security/ stretch/updates main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb-src https://mirrors.163.com/debian-security/ stretch/updates main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.163.com/debian/ stretch main non-free contrib" > /etc/apt/sources.list
+RUN echo "deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.163.com/debian/ stretch-backports main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.163.com/debian/ stretch main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib" >> /etc/apt/sources.list
+RUN echo "deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib" >> /etc/apt/sources.list
 
 
 # 无法傻瓜式安装
