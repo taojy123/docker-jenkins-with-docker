@@ -39,7 +39,6 @@ RUN apt-get update
 RUN apt-get install -y docker-ce
 
 
-RUN groupadd docker
 RUN usermod -aG docker jenkins
 
 
