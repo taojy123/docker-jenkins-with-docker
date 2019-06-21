@@ -43,4 +43,4 @@ RUN sed -i '1 a\\nnohup dockerd &\n' /usr/local/bin/jenkins.sh
 
 LABEL name="jenkins-with-docker"
 LABEL baseos="Debian 9 Stretch"
-LABEL startup="docker run --name jenkins -d -p 8080:8080 -p 5000:50000 -v /var/jenkins_home:/var/jenkins_home --privileged jenkins-with-docker"
+LABEL startup="docker run --name jenkins -d -p 8080:8080 -p 5000:50000 -v /var/jenkins_home:/var/jenkins_home --privileged taojy123/jenkins-with-docker"
